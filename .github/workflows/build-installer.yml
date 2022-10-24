@@ -30,7 +30,7 @@ jobs:
       working-directory: ${{ github.workspace }}/installer
       run: move microk8s.exe ./windows/microk8s.exe
     - name: Download EnVar plugin for NSIS
-      uses: carlosperate/download-file-action@v1.0.3
+      uses: carlosperate/download-file-action@v2.0.0
       with:
         file-url: https://nsis.sourceforge.io/mediawiki/images/7/7f/EnVar_plugin.zip
         file-name: envar_plugin.zip
@@ -38,7 +38,7 @@ jobs:
     - name: Extract EnVar plugin
       run: 7z x -o"C:/Program Files (x86)/NSIS" "${{ github.workspace }}/envar_plugin.zip"
     - name: Download Multipass installer
-      uses: carlosperate/download-file-action@v1.0.3
+      uses: carlosperate/download-file-action@v2.0.0
       with:
         file-url: https://github.com/canonical/multipass/releases/download/v1.3.0/multipass-1.3.0+win-win64.exe
         file-name: multipass.exe
