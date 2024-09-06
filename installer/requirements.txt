@@ -9,5 +9,6 @@ simplejson==3.8.2
 toml==0.10.0
 wheel
 pyinstaller
-setuptools<45.0.0  # https://github.com/pypa/setuptools/issues/1963
+setuptools<70.0.0  # https://github.com/pypa/setuptools/issues/1963
 https://pyyaml.org/download/pyyaml/PyYAML-5.3.1-cp38-cp38-win_amd64.whl; sys_platform == 'win32'
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
